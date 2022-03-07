@@ -23,7 +23,12 @@ function App() {
         onProgress={() => console.log(11)}
         onChange={() => console.log("change")}
         beforeUpload={filePromise}
-      />
+        multiple
+        drag={true}
+      // accept={'.jpg'}
+      >
+        <Button btnType={ButtonType.Danger}>hello</Button>
+      </Upload>
     </div>
   );
 }
